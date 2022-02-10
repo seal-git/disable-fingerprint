@@ -1,3 +1,3 @@
-#Get-PnpDevice | ? {$_.friendlyname -like "*生体認証*"} | Disable-PnpDevice -Confirm:$false
-#Get-PnpDevice | ? {$_.friendlyname -like "*生体認証*"} | Write-Host $_
+# 生体認証デバイスをオフにする
+# classがbiometricであるデバイスが複数ある時にどうなるのかは未検証
 Get-PnpDevice | ? {$_.class -like "biometric"} | Disable-PnpDevice -Confirm:$false
