@@ -1,0 +1,15 @@
+.idea
+.project
+.pydevproject
+.Dockerfile.swp
+__pycache__
+__init__.pyc
+*.db
+.env
+mysql/db/*
+.DS_Store
+react/node_modules
+react/build
+*.log
+react/public/cmaps
+List.txt
